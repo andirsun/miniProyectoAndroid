@@ -12,8 +12,7 @@ import com.example.datastorage.R
 import com.example.datastorage.Servicios.MovieDBServices
 
 
-class MoviesListActivity : AppCompatActivity()
-{
+class MoviesListActivity : AppCompatActivity() {
     private lateinit var listView: ListView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,21 +27,24 @@ class MoviesListActivity : AppCompatActivity()
 
         listView.setClickable(true)
         listView.setOnItemClickListener { adapterView, view, i, l ->
-            Toast.makeText(this, "Nombre" + adapter.getName(i) + "id : "+adapter.getItemId(i) , Toast.LENGTH_SHORT).show()
-            val name=adapter.getName(i)
+            Toast.makeText(this, "Nombre" + adapter.getName(i) + "id : " + adapter.getItemId(i), Toast.LENGTH_SHORT)
+                .show()
+            val name = adapter.getName(i)
             val intent = Intent(this, ProfileMovieActivity::class.java)
-            intent.putExtra("name",name)
+            intent.putExtra("name", name)
             startActivity(intent)
 
         }
     }
-    fun registrarMovie(view: View){
-        var intento=Intent(this,RegisterMovieActivity::class.java)
+
+    fun registrarMovie(view: View) {
+        var intento = Intent(this, RegisterMovieActivity::class.java)
         startActivity(intento)
 
     }
-    fun cargarUsuarios(view: View){
-        var intento=Intent(this,UsersListActivity::class.java)
+
+    fun loadUsuarios(view: View) {
+        var intento = Intent(this, UsersListActivity::class.java)
         startActivity(intento)
     }
 }

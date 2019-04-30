@@ -34,7 +34,7 @@
             android:textColorHint="@android:color/holo_red_light"
             android:background="@android:color/holo_red_light"
             android:ems="10"
-            app:layout_constraintHorizontal_bias="0.205" android:onClick="cargarUsuarios"
+            app:layout_constraintHorizontal_bias="0.205" android:onClick="loadUsuarios"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/listMovies"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.444"/>
     <ListView
