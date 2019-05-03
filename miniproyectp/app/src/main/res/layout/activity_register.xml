@@ -87,8 +87,8 @@
             app:layout_constraintTop_toBottomOf="@+id/ano"
             android:id="@+id/registrar"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorPrimary"
-            android:background="@drawable/rounder_corner_button"
+            android:textColorHint="@android:color/holo_red_light"
+            android:background="@android:color/holo_red_light"
             android:ems="10"
             android:onClick="ingresarUsuario"/>
 
@@ -102,8 +102,8 @@
             app:layout_constraintTop_toBottomOf="@+id/registrar"
             android:id="@+id/volver"
             android:textColor="@color/colorText"
-            android:textColorHint="@color/colorPrimary"
-            android:background="@drawable/rounder_corner_button"
+            android:textColorHint="@android:color/holo_red_light"
+            android:background="@android:color/holo_red_light"
             android:ems="10"/>
     <ImageButton
             android:layout_width="wrap_content"

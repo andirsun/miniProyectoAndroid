@@ -46,10 +46,9 @@ class MainActivity : AppCompatActivity()
             */
 
             val intent = Intent(this,MoviesListActivity::class.java)
+            intent.putExtra("name",user.email)
+
             startActivity(intent)
-
-
-
 
         }
         else

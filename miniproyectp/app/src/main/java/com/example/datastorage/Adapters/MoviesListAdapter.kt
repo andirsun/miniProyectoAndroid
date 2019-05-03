@@ -44,6 +44,7 @@ class MoviesListAdapter(private val activity: Activity, moviesList: List<Movie>?
         val genero = vi.findViewById<TextView>(R.id.genero)
         val imagen=vi.findViewById<ImageView>(R.id.movieImage)
         val puntuacion = vi.findViewById<TextView>(R.id.puntuacion)
+        val boton=vi.findViewById<TextView>(R.id.reservar)
         name.text = moviesList[i].name.toString()
         duration.text = moviesList[i].duration.toString()
         genero.text =moviesList[i].genre.toString()

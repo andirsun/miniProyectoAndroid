@@ -23,6 +23,8 @@
         </activity>
         <activity android:name=".Controladores.ProfileMovieActivity">
         </activity>
+        <activity android:name=".Controladores.statusReservationActivity">
+        </activity>
         <activity
                 android:name=".Controladores.MainActivity"
                 android:label="@string/app_name"

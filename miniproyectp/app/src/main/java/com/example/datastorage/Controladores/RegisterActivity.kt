@@ -70,11 +70,13 @@ class RegisterActivity : AppCompatActivity() {
             selectImageM.setImageURI(Uri.parse(ruta))
         }
     }
+
     fun profile(view: View)
     {
         val intent = Intent(this, ProfileActivity::class.java)
         startActivity(intent)
     }
+
     fun ingresarUsuario(view: View)
     {
         val nombre= findViewById<TextView>(R.id.nombre_movie);
@@ -86,7 +88,10 @@ class RegisterActivity : AppCompatActivity() {
         //this.registerService.saveUser(user)
         UserDBServices(this).saveUser(user)
 
-        //Toast.makeText(this, "Datos incorrectos",  Toast.LENGTH_SHORT).show()
+        //val intent = Intent(this,ProfileActivity::class.java)
+        //startActivity(intent)
+
+        Toast.makeText(this, "Usuario Registrado con exito",  Toast.LENGTH_SHORT).show()
     }
 
 }

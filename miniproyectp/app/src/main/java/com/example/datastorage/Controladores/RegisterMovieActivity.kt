@@ -84,13 +84,7 @@ class RegisterMovieActivity : AppCompatActivity() {
         val movie = Movie(null, nombre.text.toString(), duracion.text.toString(),ruta, resumen.text.toString(), genero.text.toString(), fecha.text.toString(), director.text.toString(),"4.5")
         //val movie = Movie(null,"LOTR" ,"360",ruta,"Sipno","ficcion","2001","Peter Jackson","5")
         MovieDBServices(this).saveMovie(movie)
-
-
-
-
-
-
-        //Toast.makeText(this, "Datos incorrectos",  Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Pelìcula Registrada con exito",  Toast.LENGTH_SHORT).show()
     }
     fun cargarPeliculas(view: View){
         val intent = Intent(this, MoviesListActivity::class.java)
